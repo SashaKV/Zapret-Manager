@@ -201,9 +201,7 @@ install_mihomo() {
     mkdir -p "$MIHOMO_INSTALL_DIR" \
              /etc/mihomo/proxy-providers \
              /etc/mihomo/rule-providers \
-             /etc/mihomo/rule-files \
-             /etc/mihomo/UI/zashboard \
-			 /etc/mihomo/UI/metacubex
+             /etc/mihomo/rule-files
 
     echo "$MIHOMO_ARCH" > /etc/mihomo/.arch
 
@@ -267,12 +265,7 @@ unified-delay: true
 tcp-concurrent: false
 find-process-mode: off
 external-controller: 0.0.0.0:9090
-# Zashboard
-#external-ui: ./UI/zashboard/
-#external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip"
-# MetaCubeX
-#external-ui: ./UI/metacubex/
-#external-ui-url: "https://github.com/MetaCubeX/metacubexd/releases/latest/download/compressed-dist.tgz"
+external-ui: ./ui
 routing-mark: 2
 profile:
   store-selected: true
