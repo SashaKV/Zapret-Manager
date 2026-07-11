@@ -1540,8 +1540,6 @@ rm -rf "$TMP1" "$TMP2"
     echo ""
     log_done "Установка Mixomo OpenWrt прошла успешно!"
     echo ""
-    
-    echo ""
 }
 
 main
